@@ -48,7 +48,7 @@ public class Gravity : MonoBehaviour
 
         float forceMagnitude = G *(rb.mass * otherRigidbody.mass)/Mathf.Pow(distance, 2);
 
-        Vector2 gravityForce = forceMagnitude * direction.normalized;
+        Vector3 gravityForce = forceMagnitude * direction.normalized;
 
         otherRigidbody.AddForce(gravityForce);
     }
